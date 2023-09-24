@@ -11,23 +11,24 @@
     "prepare": "chmod +x .husky/pre-commit && chmod +x .husky/commit-msg && husky install",
     "pre-commit": "echo \"[Husky] pre-commit\""
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "npx lint-staged"
     }
   },
+  
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
-
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",

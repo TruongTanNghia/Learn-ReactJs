@@ -23,7 +23,6 @@
       {
         "extensions": [".js", ".jsx"]
       }
-
     ],
     "no-console": [
       "error",
@@ -31,7 +30,7 @@
         "allow": ["info", "warn", "error", "time", "timeEnd"]
       }
     ],
-    
+
     "react/prop-types": "off",
     "react/display-name": "off",
     "react/jsx-key": "off",
