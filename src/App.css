@@ -1,24 +1,12 @@
 #root {
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
     text-align: center;
 }
 body {
-    background: lightblue url("https://wallpaperaccess.com/full/9337021.gif") no-repeat fixed center;
-}
-
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+    background: rgb(255, 255, 255) url("https://wallpaperaccess.com/full/38125.jpg") no-repeat fixed
+        center;
 }
 
 @keyframes logo-spin {

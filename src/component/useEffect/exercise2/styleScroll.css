@@ -1,0 +1,29 @@
+:root {
+    --Hheight: 15px;
+}
+.scroll {
+    background-color: rgb(255, 0, 0);
+    height: var(--Hheight);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    /* z-index: 1; */
+}
+.stylesScroll {
+    background-color: rgb(0, 154, 154);
+    height: var(--Hheight);
+    padding: 0;
+    /* width: 0%; */
+}
+.text {
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 900;
+}
+.text2 {
+    padding: 80px;
+    line-height: 35px;
+}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import './Styles.css';
+import './styles.css';
 const Index = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
