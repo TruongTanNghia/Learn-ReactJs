@@ -12,7 +12,7 @@ function App() {
     <Fragment>
       <Bai1UseState />
       <Bai1UseEffect />
-      
+      <Bai2UseEffect />
     </Fragment>
   );
 }
