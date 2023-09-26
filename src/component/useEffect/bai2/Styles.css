@@ -1,0 +1,42 @@
+button:hover {
+    background-color: aquamarine;
+    color: black;
+}
+button:active {
+    background-color: blueviolet;
+    color: black;
+}
+
+ul {
+    display: block;
+    margin-left: -10px;
+}
+
+ul li {
+    display: block;
+    position: relative;
+    color: rgb(68, 255, 0);
+    font-weight: 900;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+ul li:before {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    left: -30px;
+    margin-top: -0.9em;
+    background: #f69ec4;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+img {
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
