@@ -1,23 +1,16 @@
-import { useState } from 'react';
+// import { useState } from 'react';
+import { Fragment } from 'react';
 import './App.css';
+// import Index from '@useEffect/bai2/Index.jsx';
+import { Bai2 } from '@Imports/Import.jsx';
+import { Bai1useState } from '@Imports/Import.jsx';
 function App() {
-  const [count, setCount] = useState(0);
-
+  // <button onClick="">Bài 1 {Bai1useState}</button>;
   return (
-    <>
-      <div>
-        <h1>Test 223</h1>
-      </div>
-
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    <Fragment>
+      <Bai1useState />
+      <Bai2 />
+    </Fragment>
   );
 }
 
