@@ -16,9 +16,11 @@ export default defineConfig({
       '@': 'src',
       '@Image': '/src/assets',
       '@Component': 'src/component',
-      '@Imports': 'src/imports/*',
+      '@Imports': 'src/imports',
       '@Styles': 'src/styles',
       '@Pages': 'src/pages',
+      '@useEffect': 'src/component/useEffect',
+      '@useState': 'src/component/useState',
     },
   },
 });

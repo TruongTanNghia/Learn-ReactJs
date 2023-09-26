@@ -7,7 +7,9 @@
       "@Components/*": ["src/components/*"],
       "@Imports/*": ["src/imports/*"],
       "@Pages/*": ["src/pages/*"],
-      "@Styles/*": ["src/styles/*"]
+      "@Styles/*": ["src/styles/*"],
+      "@useEffect/*": ["src/component/useEffect/*"],
+      "@useState/*": ["src/component/useState/*"]
     }
   }
 }
