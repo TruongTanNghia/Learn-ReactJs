@@ -11,26 +11,33 @@ const Index = () => {
 
   const fetchData = async () => {
     setIsLoading(true);
-    return axios
-      .get(`https://jsonplaceholder.typicode.com/users`)
-      .then((rs) => {
-        setData(rs.data);
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        setError('Khong lay duoc data');
-        console.error(error);
-        setIsLoading(false);
-      });
+    // return axios
+    //   .get(`https://jsonplaceholder.typicode.com/users`)
+    //   .then((rs) => {
+    //     setData(rs.data);
+    //     setIsLoading(false);
+    //   })
+    try {
+      const rs = await axios.get(`https://jsonplaceholder.typicode.com/users`);
+      setData(rs.data);
+      setIsLoading(false);
+    } catch (error) {
+      setError('Khong lay duoc data');
+      console.error(error);
+      setIsLoading(false);
+    }
   };
   useEffect(() => {
     fetchData();
   }, []);
 
   const filtereData = data
-    .sort((a, b) => a.name.localeCompare(b.name)) // Muốn chuyển từ z-a thì đổi thành b.name.localeCompare(a.name))
+    .sort((a, b) => b.name.localeCompare(a.name)) // Muốn chuyển từ z-a thì đổi thành b.name.localeCompare(a.name))
     .filter((item) => {
-      return item.name.toLowerCase().includes(search.toLowerCase());
+      const searchValue = (search || '').toLowerCase();
+      const nameMatch = (item.name || '').toLowerCase().includes(searchValue);
+      const titleMatch = (item.email || '').toLowerCase().includes(searchValue);
+      return nameMatch || titleMatch;
     });
   const handeChange = (e) => {
     setSearch(e.target.value);
@@ -51,7 +58,11 @@ const Index = () => {
       <input type="text" placeholder="Search" value={search} onChange={handeChange} />
       <ul>
         {filtereData.map((item) => (
-          <li key={item.id}>{item.name}</li>
+          <li key={item.id}>
+            Name: {item.name}
+            <br />
+            Email: {item.email}
+          </li>
         ))}
       </ul>
       <button onClick={handelClearSearch}>Clear Search</button>
