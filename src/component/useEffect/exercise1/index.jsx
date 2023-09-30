@@ -7,21 +7,18 @@ const Index = () => {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState('');
 
-  const handleFetchApi = (param) => {
+  const handleFetchApi = async (param) => {
     setLoading(true);
-
-    return axios
-      .get(`https://jsonplaceholder.typicode.com/${param}`)
-      .then((rs) => {
-        setData(rs.data);
-        setLoading(false);
-      })
-      .catch(() => {
-        setLoading(false);
-        setError('Data Lõ');
-      });
+    try {
+      const rs = await axios.get(`https://jsonplaceholder.typicode.com/${param}`);
+      setData(rs.data);
+      setLoading(false);
+    } catch (error) {
+      setError('Khong lay duoc data');
+      console.error(error);
+      setLoading(false);
+    }
   };
-
   useEffect(() => {
     handleFetchApi('users');
   }, []);
@@ -59,7 +56,13 @@ const Index = () => {
   }
   return (
     <>
-      <input type="text" placeholder="Search" value={search} onChange={handeSearch} />
+      <input
+        className="input"
+        type="text"
+        placeholder="Search"
+        value={search}
+        onChange={handeSearch}
+      />
       <button onClick={() => handleFetchApi('users')}> Users </button>
       <button onClick={() => handleFetchApi('comments')}> Comments </button>
       <button onClick={() => handleFetchApi('posts')}> Posts</button>

@@ -6,3 +6,6 @@ export { default as Bai4UseEffect } from '@useEffect/exercise4/index.jsx';
 export { default as Bai1UseState } from '@useState/exercise1/bai1Index.jsx';
 // Imports todoList
 export { default as TodoList } from '@/component/todoList/todo.jsx';
+
+//Import Navbar
+export { default as NavBar } from '@/component/navBar/index.jsx';

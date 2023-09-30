@@ -54,7 +54,7 @@ const Index = () => {
   }
 
   return (
-    <div>
+    <>
       <input type="text" placeholder="Search" value={search} onChange={handeChange} />
       <ul>
         {filtereData.map((item) => (
@@ -67,7 +67,7 @@ const Index = () => {
       </ul>
       <button onClick={handelClearSearch}>Clear Search</button>
       {/* {filtereData.map} */}
-    </div>
+    </>
   );
 };
 
