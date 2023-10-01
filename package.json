@@ -9,7 +9,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "chmod +x .husky/pre-commit && chmod +x .husky/commit-msg && husky install",
-    "pre-commit": "echo \"[Husky] pre-commit\""
+    "pre-commit": "echo \"[Husky] pre-commit\"",
+    "server": "json-server --watch ./database/db.json  --routes ./database/routes.json --port 5000"
   },
   "husky": {
     "hooks": {
