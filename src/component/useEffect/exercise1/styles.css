@@ -40,8 +40,9 @@ img {
     width: 200px;
     text-align: center;
 }
-.input {
-    position: absolute;
-    top: 88px;
-    left: 636px;
+.inputform {
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
 }

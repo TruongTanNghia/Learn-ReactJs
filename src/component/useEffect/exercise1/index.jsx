@@ -57,12 +57,13 @@ const Index = () => {
   return (
     <>
       <input
-        className="input"
+        className="inputform"
         type="text"
         placeholder="Search"
         value={search}
         onChange={handeSearch}
       />
+      <br />
       <button onClick={() => handleFetchApi('users')}> Users </button>
       <button onClick={() => handleFetchApi('comments')}> Comments </button>
       <button onClick={() => handleFetchApi('posts')}> Posts</button>

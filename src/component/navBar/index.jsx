@@ -4,6 +4,8 @@ import {
   Bai2UseEffect,
   Bai4UseEffect,
   Bai1UseState,
+  Bai2UseState,
+  Bai3UseState,
   TodoList,
   // NavBar,
 } from '@Imports/Import.jsx';
@@ -23,6 +25,10 @@ const Index = () => {
     switch (selectedExercise) {
       case 'Bai1UseState':
         return <Bai1UseState />;
+      case 'Bai2UseState':
+        return <Bai2UseState />;
+      case 'Bai3UseState':
+        return <Bai3UseState />;
       case 'Bai1UseEffect':
         return <Bai1UseEffect />;
       case 'Bai2UseEffect':
@@ -40,6 +46,8 @@ const Index = () => {
     <Fragment>
       <div className="button-container">
         <button onClick={() => handleSelect('Bai1UseState')}>Bài 1 - useState</button>
+        <button onClick={() => handleSelect('Bai2UseState')}>Bài 2 - useState</button>
+        <button onClick={() => handleSelect('Bai3UseState')}>Bài 3 - useState</button>
         <button onClick={() => handleSelect('Bai1UseEffect')}>Bài 1 - useEffect</button>
         <button onClick={() => handleSelect('Bai2UseEffect')}>Bài 2 - useEffect</button>
         <button onClick={() => handleSelect('Bai4UseEffect')}>Bài 4 - useEffect</button>
