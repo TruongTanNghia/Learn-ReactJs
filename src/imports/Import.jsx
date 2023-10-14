@@ -1,13 +1,16 @@
 // Imports useEffect
-export { default as Bai1UseEffect } from '@useEffect/exercise1/index.jsx';
-export { default as Bai2UseEffect } from '@useEffect/exercise2/scroll.jsx';
-export { default as Bai4UseEffect } from '@useEffect/exercise4/index.jsx';
+export { default as Bai1UseEffect } from '@/pages/useEffect/exercise1';
+export { default as Bai2UseEffect } from '@/pages/useEffect/exercise2';
+export { default as Bai4UseEffect } from '@/pages/useEffect/exercise4';
 // Imports useState
-export { default as Bai1UseState } from '@useState/exercise1/bai1Index.jsx';
-export { default as Bai2UseState } from '@useState/exercise2/Changercolor.jsx';
-export { default as Bai3UseState } from '@useState/exercise3/index.jsx';
+export { default as Bai1UseState } from '@/pages/useState/exercise1';
+export { default as Bai2UseState } from '@/pages/useState/exercise2';
+export { default as Bai3UseState } from '@/pages/useState/exercise3';
 // Imports todoList
-export { default as TodoList } from '@/component/todoList/todo.jsx';
+export { default as TodoList } from '@/pages/todoList';
 
 //Import Navbar
-export { default as NavBar } from '@/component/navBar/index.jsx';
+export { default as NavBar } from '@/layouts/navBar';
+
+// Import Router
+// export { default as IndexRouter } from '@router/IndexRouter.jsx';

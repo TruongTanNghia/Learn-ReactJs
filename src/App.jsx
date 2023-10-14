@@ -4,10 +4,12 @@ import './App.css';
 
 import { NavBar } from './imports/Import';
 
+// import { IndexRouter } from './imports/Import';
 function App() {
   return (
     <Fragment>
       <NavBar />
+      {/* <IndexRouter /> */}
     </Fragment>
   );
 }

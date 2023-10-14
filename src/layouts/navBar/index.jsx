@@ -8,7 +8,7 @@ import {
   Bai3UseState,
   TodoList,
   // NavBar,
-} from '@Imports/Import.jsx';
+} from '@/imports/Import';
 
 const Index = () => {
   const [selectedExercise, setSelectedExercise] = useState(null);

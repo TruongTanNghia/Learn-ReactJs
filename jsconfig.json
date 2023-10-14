@@ -1,21 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "/",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@Image/*": ["src/assets/*"],
-      "@Components/*": ["src/components/*"],
-      "@Imports/*": ["src/imports/*"],
-      "@Pages/*": ["src/pages/*"],
-      "@Styles/*": ["src/styles/*"],
-      "@useEffect/*": ["src/component/useEffect/*"],
-      "@useState/*": ["src/component/useState/*"],
-      "@useReducer/*": ["src/component/useReducer/*"],
-      "@useContext/*": ["src/component/useContext/*"],
-      "@useCallback/*": ["src/component/useCallback/*"],
-      "@useMemo/*": ["src/component/useMemo/*"],
-      "@useRef/*": ["src/component/useRef/*"],
-      "@todo/*": ["src/component/"]
+      "@/*": ["src/*"]
     }
-  }
+  },
+  "include": ["src/**/*"]
 }
