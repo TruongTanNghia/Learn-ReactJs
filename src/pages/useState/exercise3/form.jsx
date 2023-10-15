@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
-// import '../styles/From.css';
 const Form = (props) => {
   const [focused, setFocused] = useState(false);
 
@@ -13,9 +11,9 @@ const Form = (props) => {
   return (
     <>
       <div className="formInput">
-        <lable> {label} </lable>
+        <label> {label} </label>
         <input
-          className="inputform"
+          className="Inputform"
           {...inputProps}
           onChange={onChange}
           onBlur={handleFocus}

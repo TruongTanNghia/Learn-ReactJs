@@ -1,16 +1,19 @@
-// import { useState } from 'react';
-import { Fragment } from 'react';
+//* Lib
+import { Suspense } from 'react';
+//* CSS
 import './App.css';
 
-import { NavBar } from './imports/Import';
+//* Router
+import RouterPages from './routers';
+import Loading from './component/loading';
 
-// import { IndexRouter } from './imports/Import';
 function App() {
   return (
-    <Fragment>
-      <NavBar />
-      {/* <IndexRouter /> */}
-    </Fragment>
+    <>
+      <Suspense fallback={<Loading />}>
+        <RouterPages />
+      </Suspense>
+    </>
   );
 }
 
