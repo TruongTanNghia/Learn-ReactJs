@@ -19,21 +19,6 @@ ul li {
     font-weight: 900;
 }
 
-ul li:not(:last-child) {
-    margin-bottom: 16px;
-}
-
-ul li:before {
-    content: "";
-    position: absolute;
-    top: 1.2em;
-    left: -30px;
-    margin-top: -0.9em;
-    background: #f69ec4;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-}
 img {
     align-items: center;
     height: 200px;

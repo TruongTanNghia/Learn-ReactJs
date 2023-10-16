@@ -1,6 +1,54 @@
-.navbar {
-    position: fixed;
-    width: 100%;
+.display {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Đưa thanh navbar về giữa */
+    position: sticky;
     top: 0;
+    background-image: linear-gradient(
+        rgb(243, 255, 177),
+        rgb(111, 255, 250)
+    ); /* Màu nền của thanh navbar */
+    border-bottom: 1px solid #2980b9; /* Viền dưới thanh navbar */
+    z-index: 100; /* Z-index cao hơn để nằm trên cùng */
+}
+
+.display li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.display a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Màu chữ */
+    padding: 15px 20px; /* Khoảng cách giữa các mục menu */
+    display: block;
+}
+
+.display a:hover {
+    background-color: #2980b9; /* Màu khi hover */
+}
+
+.sub-menu2 {
+    display: none;
+    position: absolute;
+    top: 100%;
     left: 0;
+    background-color: #27f1ff;
+    border: 1px solid #ccc;
+    padding: 0;
+    width: 200px;
+}
+
+.sub-menu2 li {
+    display: block;
+}
+
+.sub-menu2 li a {
+    padding: 10px;
+}
+
+.display li:hover .sub-menu2 {
+    display: block;
 }
