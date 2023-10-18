@@ -9,11 +9,12 @@ export { default as Bai4UseEffect } from '@/pages/useEffect/exercise4';
 export { default as Bai1UseState } from '@/pages/useState/exercise1';
 export { default as Bai2UseState } from '@/pages/useState/exercise2';
 export { default as Bai3UseState } from '@/pages/useState/exercise3';
+// Import useRef
+export { default as Bai1UseRef } from '@/pages/useRef/exercise1/index';
 // Imports todoList
 export { default as TodoList } from '@/pages/todoList';
 //Import Navbar
 export { default as NavBar } from '@/layouts/navBar';
 
-// Import Router
 // export { default as RouterPages } from '@/routers/index';
 // export { default as IndexRouter } from '@router/IndexRouter.jsx';

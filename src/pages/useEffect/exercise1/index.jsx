@@ -69,9 +69,11 @@ const Index = () => {
       <button onClick={() => handleFetchApi('posts')}> Posts</button>
       <button onClick={() => handleFetchApi('todos')}> Todos</button>
       <button onClick={() => handleFetchApi('albums')}> albums</button>
-      <ul>
+      <ul className="A">
         {filtereData.map((item) => (
-          <li key={item.id}>{item.name || item.title} </li>
+          <li className="B" key={item.id}>
+            {item.name || item.title}{' '}
+          </li>
         ))}
       </ul>
     </>

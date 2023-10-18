@@ -37,6 +37,14 @@ const NavBar = () => {
           </ul>
         </li>
         <li className="thefirst">
+          <NavlinkActive to="useRef"> useRef </NavlinkActive>
+          <ul className="sub-menu2">
+            <li>
+              <NavlinkActive to="useRef/bai1UseRef">Exercise 1</NavlinkActive>
+            </li>
+          </ul>
+        </li>
+        <li className="thefirst">
           <NavlinkActive to="projects/projects1">TodoList</NavlinkActive>
         </li>
       </ul>

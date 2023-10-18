@@ -10,6 +10,7 @@ import {
   NavBar,
   HomePage,
   NotfoundPage,
+  Bai1UseRef,
   // NavBar,
 } from '@/imports/Import';
 import { useRoutes } from 'react-router-dom';
@@ -60,6 +61,15 @@ const RouterPage = () => {
             {
               path: 'bai4useEffect',
               element: <Bai4UseEffect />,
+            },
+          ],
+        },
+        {
+          path: 'useRef',
+          children: [
+            {
+              path: 'bai1useRef',
+              element: <Bai1UseRef />,
             },
           ],
         },
