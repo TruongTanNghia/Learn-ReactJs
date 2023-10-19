@@ -18,10 +18,10 @@ const Bai2UseRef = () => {
     prevIdCount.current = count;
   }, [count]);
 
-  // console.log(prevIdCount.current, 'nó là cái quầN què gì ?');
+  console.log(prevIdCount, 'nó là cái quầN què gì ?');
   return (
     <>
-      <h1>New: {count}</h1>
+      <h1 ref={prevIdCount}>New: {count}</h1>
       <h1>Old: {prevIdCount.current}</h1>
       <button onClick={handleCounter}>Start</button>
       <button onClick={handleStop}>Stop</button>

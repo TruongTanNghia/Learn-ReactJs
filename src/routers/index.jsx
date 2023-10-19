@@ -12,6 +12,7 @@ import {
   NotfoundPage,
   Bai1UseRef,
   Bai2UseRef,
+  Bai3UseRef,
   // NavBar,
 } from '@/imports/Import';
 import { useRoutes } from 'react-router-dom';
@@ -75,6 +76,10 @@ const RouterPage = () => {
             {
               path: 'bai2useRef',
               element: <Bai2UseRef />,
+            },
+            {
+              path: 'bai3useRef',
+              element: <Bai3UseRef />,
             },
           ],
         },
