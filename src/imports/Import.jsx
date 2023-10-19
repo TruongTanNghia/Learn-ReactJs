@@ -11,6 +11,7 @@ export { default as Bai2UseState } from '@/pages/useState/exercise2';
 export { default as Bai3UseState } from '@/pages/useState/exercise3';
 // Import useRef
 export { default as Bai1UseRef } from '@/pages/useRef/exercise1/index';
+export { default as Bai2UseRef } from '@/pages/useRef/exercise2/index';
 // Imports todoList
 export { default as TodoList } from '@/pages/todoList';
 //Import Navbar

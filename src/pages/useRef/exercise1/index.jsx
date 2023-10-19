@@ -29,9 +29,6 @@ const Bai1UseRef = () => {
     clearInterval(timeIdRef.current);
     setCount(60);
   };
-  // useEffect(() => {
-  //   return () => clearInterval(timeIdRef.current);
-  // }, []);
 
   console.table([
     {
