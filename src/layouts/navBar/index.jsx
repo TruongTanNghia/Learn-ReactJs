@@ -51,6 +51,9 @@ const NavBar = () => {
             <li>
               <NavlinkActive to="useRef/bai4useRef">Exercise 4</NavlinkActive>
             </li>
+            <li>
+              <NavlinkActive to="useRef/bai5useRef">Exercise 5</NavlinkActive>
+            </li>
           </ul>
         </li>
         <li className="thefirst">
