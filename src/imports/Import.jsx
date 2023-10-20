@@ -13,6 +13,7 @@ export { default as Bai3UseState } from '@/pages/useState/exercise3';
 export { default as Bai1UseRef } from '@/pages/useRef/exercise1/index';
 export { default as Bai2UseRef } from '@/pages/useRef/exercise2/index';
 export { default as Bai3UseRef } from '@/pages/useRef/exercise3/index';
+export { default as Bai4UseRef } from '@/pages/useRef/exercise4/index';
 // Imports todoList
 export { default as TodoList } from '@/pages/todoList';
 //Import Navbar

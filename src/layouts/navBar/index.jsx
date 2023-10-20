@@ -48,6 +48,9 @@ const NavBar = () => {
             <li>
               <NavlinkActive to="useRef/bai3useRef">Exercise 3</NavlinkActive>
             </li>
+            <li>
+              <NavlinkActive to="useRef/bai4useRef">Exercise 4</NavlinkActive>
+            </li>
           </ul>
         </li>
         <li className="thefirst">

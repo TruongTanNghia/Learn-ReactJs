@@ -13,6 +13,7 @@ import {
   Bai1UseRef,
   Bai2UseRef,
   Bai3UseRef,
+  Bai4UseRef,
   // NavBar,
 } from '@/imports/Import';
 import { useRoutes } from 'react-router-dom';
@@ -80,6 +81,10 @@ const RouterPage = () => {
             {
               path: 'bai3useRef',
               element: <Bai3UseRef />,
+            },
+            {
+              path: 'bai4useRef',
+              element: <Bai4UseRef />,
             },
           ],
         },
