@@ -15,6 +15,7 @@ import {
   Bai3UseRef,
   Bai4UseRef,
   Bai5UseRef,
+  Bai6UseRef,
 
   // NavBar,
 } from '@/imports/Import';
@@ -91,6 +92,10 @@ const RouterPage = () => {
             {
               path: 'bai5useRef',
               element: <Bai5UseRef />,
+            },
+            {
+              path: 'bai6useRef',
+              element: <Bai6UseRef />,
             },
           ],
         },
