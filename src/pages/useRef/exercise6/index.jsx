@@ -1,8 +1,7 @@
 import { useRef, useState } from 'react';
-import { redirect } from 'react-router-dom';
 
 const Bai6UseRef = () => {
-  const paragrapStyles = {
+  const paragraphStyles = {
     WebkitLineClamp: 3,
     webkitBoxOrient: 'vertical',
     overflow: 'hidden',
@@ -19,7 +18,7 @@ const Bai6UseRef = () => {
   console.log(isOpen);
   return (
     <>
-      <p ref={paragrapRef} style={isOpen ? null : paragrapStyles}>
+      <p ref={paragrapRef} style={isOpen ? null : paragraphStyles}>
         WebkitLineClamp: Đây là một thuộc tính không chuẩn của CSS, được sử dụng để giới hạn số dòng
         của văn bản được hiển thị. Trong trường hợp này, WebkitLineClamp được thiết lập thành 3,
         nghĩa là nội dung chỉ hiển thị tối đa 3 dòng. Khi nội dung vượt quá 3 dòng, các dòng vượt

@@ -6,7 +6,6 @@ import {
   Bai1UseState,
   Bai2UseState,
   Bai3UseState,
-  TodoList,
   NavBar,
   HomePage,
   NotfoundPage,
@@ -16,6 +15,7 @@ import {
   Bai4UseRef,
   Bai5UseRef,
   Bai6UseRef,
+  Bai1UseReducer,
 
   // NavBar,
 } from '@/imports/Import';
@@ -101,10 +101,14 @@ const RouterPage = () => {
         },
         {
           path: 'projects',
+          children: [],
+        },
+        {
+          path: 'useReducer',
           children: [
             {
-              path: 'projects1',
-              element: <TodoList />,
+              path: 'bai1UseReducer',
+              element: <Bai1UseReducer />,
             },
           ],
         },

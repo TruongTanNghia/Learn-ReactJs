@@ -17,6 +17,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/prop-types": "off",
+    "no-case-declarations": "off",
   },
 }
 

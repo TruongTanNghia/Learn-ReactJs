@@ -36,6 +36,7 @@ const NavBar = () => {
             </li>
           </ul>
         </li>
+
         <li className="thefirst">
           <NavlinkActive to="useRef"> useRef </NavlinkActive>
           <ul className="sub-menu2">
@@ -59,6 +60,18 @@ const NavBar = () => {
             </li>
           </ul>
         </li>
+        <li className="thefirst">
+          <NavlinkActive to="useReducer"> useReducer </NavlinkActive>
+          <ul className="sub-menu2">
+            <li>
+              <NavlinkActive to="useReducer/bai1UseReducer/">Exercise 1</NavlinkActive>
+            </li>
+            {/* <li>
+              <NavlinkActive to="useRef/bai2UseRef">Exercise 2</NavlinkActive>
+            </li> */}
+          </ul>
+        </li>
+
         <li className="thefirst">
           <NavlinkActive to="projects/projects1">TodoList</NavlinkActive>
         </li>
