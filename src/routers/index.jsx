@@ -16,6 +16,7 @@ import {
   Bai5UseRef,
   Bai6UseRef,
   Bai1UseReducer,
+  Bai1Redux,
 
   // NavBar,
 } from '@/imports/Import';
@@ -113,6 +114,20 @@ const RouterPage = () => {
                 {
                   path: 'bai1UseReducer',
                   element: <Bai1UseReducer />,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          path: 'libs',
+          children: [
+            {
+              path: 'redux',
+              children: [
+                {
+                  path: 'bai1Redux',
+                  element: <Bai1Redux />,
                 },
               ],
             },

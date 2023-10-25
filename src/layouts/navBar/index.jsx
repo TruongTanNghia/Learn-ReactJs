@@ -80,6 +80,19 @@ const NavBar = () => {
             </li>
           </ul>
         </li>
+        <li className="thefirst">
+          <NavlinkActive to="libs"> Libs </NavlinkActive>
+          <ul className="sub-menu2">
+            <li className="thefirst">
+              <NavlinkActive to="libs/redux"> React-Redux </NavlinkActive>
+              <ul className="sub-menu3">
+                <li>
+                  <NavlinkActive to="libs/redux/bai1Redux">Exercise 1</NavlinkActive>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </>
   );
