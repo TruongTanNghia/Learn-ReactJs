@@ -52,3 +52,26 @@
 .display li:hover .sub-menu2 {
     display: block;
 }
+.sub-menu3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff; /* Màu nền cho menu cấp 3 */
+    border: 1px solid #ccc;
+    width: 200px;
+    z-index: 101; /* Để menu cấp 3 nằm trên menu cấp 2 */
+}
+
+.sub-menu3 li {
+    display: block;
+}
+
+.sub-menu3 li a {
+    padding: 10px;
+}
+
+/* Hiển thị menu cấp 3 khi hover trên menu cấp 2 */
+.sub-menu2 li:hover .sub-menu3 {
+    display: block;
+}
