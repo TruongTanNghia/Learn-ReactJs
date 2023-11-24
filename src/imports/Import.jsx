@@ -30,5 +30,7 @@ export { default as Bai1UseReducer } from '@/pages/reactHook/useReducer/exercise
 //* Import Navbar
 export { default as NavBar } from '@/layouts/navBar';
 
+//* Import Project
+export { default as Todolist } from '@/pages/project/todoList';
 // export { default as RouterPages } from '@/routers/index';
 // export { default as IndexRouter } from '@router/IndexRouter.jsx';

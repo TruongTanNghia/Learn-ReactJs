@@ -74,10 +74,6 @@ const NavBar = () => {
             </li> */}
               </ul>
             </li>
-
-            <li className="thefirst">
-              <NavlinkActive to="projects/projects1">TodoList</NavlinkActive>
-            </li>
           </ul>
         </li>
         <li className="thefirst">
@@ -90,6 +86,14 @@ const NavBar = () => {
                   <NavlinkActive to="libs/redux/bai1Redux">Exercise 1</NavlinkActive>
                 </li>
               </ul>
+            </li>
+          </ul>
+        </li>
+        <li className="thefirst">
+          <NavlinkActive to="projects"> Project </NavlinkActive>
+          <ul className="sub-menu2">
+            <li className="thefirst">
+              <NavlinkActive to="projects/todolist"> Todo-List </NavlinkActive>
             </li>
           </ul>
         </li>
